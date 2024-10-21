@@ -28,11 +28,11 @@ public class Data
 	 *@param max_value (int) the Max Value a Data Entry should have 
 	 *@param min_length (int) the min Length the Data Array should have 
 	 */
-	public static int[] get_random(int max_length, int max_value, int min_value)
+	public static int[] get_random(int max_length, int max_value, int min_length)
 	{
 		// Array Length Generation
 		int Data_size = 0;
-		while (Data_size <= min_value)
+		while (Data_size <= min_length)
 			Data_size = random.nextInt(max_length);
 		
 		// Value Generation
